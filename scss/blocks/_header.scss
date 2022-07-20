@@ -1,7 +1,7 @@
 // bu yerda header bor
 .header {
   padding-top: 24px;
-  background: #B1DEFF;
+  background: #EDF5FA;
 
   &__container {
     display: flex;
@@ -12,6 +12,7 @@
   &__logo {
     flex-shrink: 0;
     transition: all 0.4s;
+
     &:hover {
       opacity: 0.6;
     }

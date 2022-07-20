@@ -1,1 +1,217 @@
 // bu yerda hero bor
+.hero {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background: #EDF5FA;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & > img {
+      margin-left: 135px;
+    }
+  }
+
+  &__top {
+    max-width: 600px;
+  }
+
+  &__heading {
+    max-width: 482px;
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 70px;
+    color: #3E3E3E;
+
+    &-active {
+      color: #40A3F8;
+    }
+  }
+
+  &__desc {
+    max-width: 460px;
+    margin: 0;
+    margin-bottom: 50px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 30px;
+    color: rgba(117, 117, 117, 0.46);
+  }
+
+  &__form {
+    width: 566px;
+    display: flex;
+    align-items: center;
+    padding: 13px 13px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 22px rgba(228, 245, 252, 0.3);
+    border-radius: 8px;
+  }
+
+  &__find-input {
+    padding: 17px 0;
+    margin-right: 20px;
+    padding-left: 30px;
+    max-width: 216px;
+    width: 100%;
+    background: rgba(245, 246, 250, 0.52);
+    border-radius: 8px;
+    border: transparent;
+
+    &::placeholder {
+      font-family: 'Poppins';
+      font-size: 14px;
+      line-height: 24px;
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+    &:focus {
+      outline: none;
+      border: transparent;
+    }
+  }
+
+  &__select {
+    appearance: none;
+    margin-right: 30px;
+    max-width: 203px;
+    padding: 17px 56px 17px 50px;
+    background: rgba(245, 246, 250, 0.52);
+    border-radius: 8px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 24px;
+    color: #3f3d3d;
+    border: transparent;
+    background-image: url(../images/location.png);
+    background-repeat: no-repeat;
+    background-position: left 28px center;
+
+    &:focus {
+      outline: none;
+      border: transparent;
+    }
+
+  }
+
+  &__search {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: transparent;
+    width: 70px;
+    height: 59px;
+    background-image: url(../images/lupa.png);
+    background-repeat: no-repeat;
+    transition: all 0.4s;
+
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .hero {
+
+    &__container {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      & > img {
+        margin-left: 0;
+        margin-top: 60px;
+      }
+
+    }
+
+    &__heading {
+      max-width: 550px;
+      font-size: 52px;
+    }
+
+    &__desc {
+      max-width: 550px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 620px) {
+
+  .hero {
+
+    &__heading {
+      font-size: 44px;
+      line-height: 55px;
+    }
+
+    &__desc {
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    &__form {
+      flex-direction: column;
+      width: 0;
+      max-width: 550px;
+      width: 100%;
+    }
+
+    &__find-input {
+      max-width: 450px;
+      margin-right: 0;
+    }
+
+    &__select {
+      max-width: 450px;
+      width: 100%;
+      margin-right: 0;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+  .hero {
+
+    &__heading {
+      font-size: 40px;
+      line-height: 55px;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 350px) {
+
+  .hero {
+
+    &__heading {
+      font-size: 35px;
+      line-height: 55px;
+    }
+
+  }
+
+}
